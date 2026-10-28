@@ -1,0 +1,69 @@
+# Qt Creator 本机设置
+*.pro.user
+*.pro.user.*
+*.qmlproject.user*
+*.creator.user*
+.qtcreator/
+
+# 单独的构建目录
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Qt 自动生成的中间文件
+.qmake.stash
+.qmake.cache
+moc_*.cpp
+moc_*.h
+moc_predefs.h
+ui_*.h
+qrc_*.cpp
+
+# 编译与内核模块产物
+*.o
+*.a
+*.so
+*.so.*
+*.ko
+*.mod
+*.mod.c
+*.cmd
+Module.symvers
+modules.order
+.tmp_versions/
+
+# 已知的应用二进制
+/car-terminal
+/app/car-terminal
+
+# Buildroot 大型构建目录；不要上传完整工具链和根文件系统
+/output/
+/output-car/
+/dl/
+/rootfs-car/
+
+# 本地私密配置：示例文件可以保留
+.env
+.env.*
+!.env.example
+wpa_supplicant*.conf
+!wpa_supplicant*.conf.example
+
+# 编辑器及系统临时文件
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 本地音乐素材，不影响其他目录可能存在的测试资源
+/app/music/
+/music/
+
+# 有意保留：
+# 手写 Makefile、Kconfig、构建配置、源码、文档、图片
+# dts 目录最终 DTB：不要添加 *.dtb 忽略规则
+

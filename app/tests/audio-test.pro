@@ -1,0 +1,9 @@
+QT = core
+CONFIG += console c++14
+CONFIG -= app_bundle
+TEMPLATE = app
+TARGET = audio-test
+SOURCES += audio-test.cpp ../src/audio.cpp
+HEADERS += ../src/audio.h
+INCLUDEPATH += ../src
+LIBS += -lasound
